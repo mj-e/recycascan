@@ -3,11 +3,11 @@
 Hello welcome to Will, Matt and Andys React Native mobile app - Recycascan! This app was the final project during Northcoders full stack web development course. The app was built with React Native and is currently compatible with android mobile operating systems.
 
 # Recycascan features
-Recycascan can with the users postcode, scan food packaging barcodes and tell the user which recycling waste bin to put the packaging in. Recycascan can differentiate between different councils' requirements for different products to be put into different colour bins. The app also has a calendar which shows which bins will be collected on a particular day also depending on the users local council collections. Lastly there is a map which shows all the main recycling centres local to the users postcode location.
+Recycascan can with the users postcode, scan food packaging barcodes and tell the user which recycling waste bin to put the packaging in. Recycascan can differentiate between different councils' requirements for different packaging to be put into different colour bins. The app also has a calendar which shows which bins will be collected on a particular day also depending on the users local council collections. Lastly there is a map which shows all the main recycling centres local to the users postcode location.
 
 # Demonstration
 
-- Please check the link for a brief video of the app
+- Please click the link for a brief video of the app
 
 - [Recycascan](https://www.youtube.com/watch?v=IUdKmzv3k6M)
 
