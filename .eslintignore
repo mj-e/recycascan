@@ -2,3 +2,4 @@ coverage/lcov-report/**
 *.json
 *.md
 *.sh
+node_modules/*

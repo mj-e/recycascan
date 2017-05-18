@@ -1,20 +1,46 @@
 # Recycascan
 
-Hello welcome to Will, Matt and Andys React Native mobile app - Recycascan!
+Hello welcome to Will, Matt and Andys React Native mobile app - Recycascan! This app was the final project during Northcoders full stack web development course. The app was built with React Native and is currently compatible with android mobile operating systems.
 
-## Running the app
+# Recycascan features
+Recycascan can with the users postcode, scan food packaging barcodes and tell the user which recycling waste bin to put the packaging in. Recycascan can differentiate between different councils' requirements for different products to be put into different colour bins. The app also has a calendar which shows which bins will be collected on a particular day also depending on the users local council collections. Lastly there is a map which shows all the main recycling centres local to the users postcode location.
 
-Clone the repository `git clone https://github.com/Willpicky16/barcodeScanTest2.git`
+# Demonstration
 
-Go into cloned file `cd barcodeScanTest2`
+Please check the link for a brief video of the app
 
-Install dependencies `npm install or yarn install`
+[Recycascan](https://www.youtube.com/watch?v=IUdKmzv3k6M)
 
-Start the react native program `npm start or yarn start`
+# Running the app
 
-Run on either ios or android `react-native run-ios` or `react-native run-android`
+Clone the repository 
+` git clone https://github.com/mj-e/recycascan.git`
 
-## Packages
+Install dependencies 
+` npm install`
+
+To start the react native program 
+` npm start`
+
+To build the app and run on android mobile phones 
+` react-native run-android`
+
+To run the test environment locally 
+` npm run mocha`
+
+# Download 
+
+An apk version of the app can be downloaded from here - 
+
+[Download](https://recycascan.herokuapp.com/)
+
+# Packages
+
+React Packages
+- react
+- react-native
+- react-dom
+- react-native-mock
 
 Custom Packages
 - react-navigation
@@ -48,28 +74,6 @@ Testing Packages
 - react-test-renderer
 - sinon
 
-React Packages
-- react
-- react-native
-- react-dom
-- react-native-mock
-
-## Git workflow
-
-Create and work on feature branch for example `git checkout -b feat-1`
-
-When finished completed add your work to be committed `git add .`
-
-When specific things are added, commit with a message `git commit -m '[#feat-1] test test test'`
-
-Push your work to the specific branch for example `git push origin feat-1`
-
-Open a pull request for that branch
-
-Someone checks the code and either approves or request a redo
-
 ## Links
 
-Github repository: https://github.com/Willpicky16/recycascan
-
-Trello board: https://trello.com/b/SG5Gh0lH/recycascan-kanban-board
+Github repository: https://github.com/mj-e/recycascan
