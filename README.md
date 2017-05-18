@@ -7,73 +7,52 @@ Recycascan can with the users postcode, scan food packaging barcodes and tell th
 
 # Demonstration
 
-Please check the link for a brief video of the app
+- Please check the link for a brief video of the app
 
-[Recycascan](https://www.youtube.com/watch?v=IUdKmzv3k6M)
+- [Recycascan](https://www.youtube.com/watch?v=IUdKmzv3k6M)
 
-# Running the app
+# Prerequisites
 
-Clone the repository 
-` git clone https://github.com/mj-e/recycascan.git`
+- To run this project you will need node.js installed locally. Make sure you allow installation of apps from other sources in your android security settings. 
 
-Install dependencies 
-` npm install`
+# Installing the app
 
-To start the react native program 
-` npm start`
+- Clone the repository 
+```
+ git clone https://github.com/mj-e/recycascan.git
+ ```
 
-To build the app and run on android mobile phones 
-` react-native run-android`
+- Install dependencies 
+```
+ npm install
+ ```
 
-To run the test environment locally 
-` npm run mocha`
+- To build the app and run on android mobile devices run command below and make sure your device is connected to your machine
+```
+ react-native run-android
+ ```
+
+- To run the test environment locally 
+``` 
+npm run mocha
+```
 
 # Download 
 
-An apk version of the app can be downloaded from here - 
+- An apk version of the app can be downloaded from here - 
 
 [Download](https://recycascan.herokuapp.com/)
 
-# Packages
+# Built With
 
-React Packages
-- react
-- react-native
-- react-dom
-- react-native-mock
-
-Custom Packages
-- react-navigation
-- react-native-form-generator
-- react-native-camera
-- react-native-maps
-- react-native-restart
-- react-native-vector-icons
-- axios
-- async
-- moment
-- underscore
-
-Babel Packages
-- babel-plugin-module-resolver
-- babel-preset-airbnb
-- babel-preset-react-native
-- babel-jest
-- babel-core
-- babel-preset-react-native
-
-Testing Packages
-- jest
-- react-test-renderer
-- bluebird
-- chai
-- chai-enzyme
-- enzyme
-- mocha
-- pre-commit
-- react-test-renderer
-- sinon
-
-## Links
-
-Github repository: https://github.com/mj-e/recycascan
+* [React Native](https://facebook.github.io/react-native/) 
+* [React Native Maps](https://github.com/airbnb/react-native-maps) 
+* [React Native Camera](https://github.com/lwansbrough/react-native-camera) 
+* [React Native form generator](https://github.com/MichaelCereda/react-native-form-generator)
+* [React Native vector icons](https://github.com/oblador/react-native-vector-icons)
+* [Axios](https://github.com/mzabriskie/axios)
+* [Express](https://expressjs.com/) 
+* [Mongoose](http://mongoosejs.com/) 
+* [Async JS](http://caolan.github.io/async/)
+* [Moment JS](https://momentjs.com/) 
+* [Underscore JS](http://underscorejs.org/) 
