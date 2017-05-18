@@ -3,16 +3,16 @@ import React, {
   StyleSheet,
   TouchableHighlight,
   Text
-} from 'react-native'
+} from 'react-native';
 
 class TestButton extends Component {
   render() {
-    const { text, onPress } = this.props
+    const { text, onPress } = this.props;
     return (
       <TouchableHighlight style={styles.button} onPress={onPress}>
         <Text style={styles.text}>{text.toUpperCase()}</Text>
       </TouchableHighlight>
-    )
+    );
   }
 }
 
@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
   text: {
     color: 'white'
   }
-})
+});
 
-export default TestButton
+export default TestButton;

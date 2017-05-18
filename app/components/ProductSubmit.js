@@ -9,17 +9,17 @@ const POSTROOT = 'https://world.openfoodfacts.org/cgi/product_jqm2.pl';
 
 export default class ProductSubmit extends Component {
   constructor (props) {
-    super (props)
+    super (props);
     this.state = {
       product_name: '',
       packaging: ''
-    }
+    };
   }
   handleFormChange (data) {
     this.setState({
       product_name: data.product_name,
       packaging: data.packaging
-    })
+    });
   }
   onButtonPress () {
     axios
@@ -51,15 +51,15 @@ export default class ProductSubmit extends Component {
           </View>
         </TouchableNativeFeedback>
       </View>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#ddf4c5'
   },
   title: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     padding: 10,
-    textAlign: "center"
+    textAlign: 'center'
   },
   logo: {
     marginBottom: 20,

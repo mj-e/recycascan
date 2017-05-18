@@ -1,0 +1,4 @@
+coverage/lcov-report/**
+*.json
+*.md
+*.sh

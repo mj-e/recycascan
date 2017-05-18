@@ -20,7 +20,7 @@ export const BarcodeStack = StackNavigator({
     screen: ProductSubmit,
     path: 'ProductSubmit/:code'
   }
-})
+});
 
 export const Tabs = TabNavigator({
   Home: {
@@ -47,4 +47,4 @@ export const Tabs = TabNavigator({
       tabBarLabel: 'Map'
     }
   }
-})
+});

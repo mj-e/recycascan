@@ -17,7 +17,7 @@ export default class Map extends Component {
         longitudeDelta: 0.5
       },
       centres: []
-    }
+    };
   }
   componentDidMount() {
     AsyncStorage.getItem('userDetails', (err, result) => {
@@ -35,7 +35,7 @@ export default class Map extends Component {
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421
               }
-            })
+            });
           })
           .catch((err) => {
             alert('Sorry your postcode is unavailable');
@@ -47,7 +47,7 @@ export default class Map extends Component {
       .then((res) => {
         this.setState ({
           centres: res.data.recyclingcentres
-        })
+        });
       })
       .catch((err) => {
         alert(err);

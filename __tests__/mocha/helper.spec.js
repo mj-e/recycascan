@@ -15,27 +15,27 @@ describe('postcodeToCouncil', function () {
 describe('GET council from postcode DB', function () {
     it('returns correct council for postcode', () => {
         postcodeToCouncil('M1 1RD').then((council) => {
-            expect(council).to.equal('manchester')
+            expect(council).to.equal('manchester');
         });
     });
     it('returns correct council for postcode', () => {
         postcodeToCouncil('M24 1RD').then((council) => {
-            expect(council).to.equal('oldham')
+            expect(council).to.equal('oldham');
         });
     });
     it('returns correct council for postcode', () => {
         postcodeToCouncil('BL9 1QP').then((council) => {
-            expect(council).to.equal('bury')
+            expect(council).to.equal('bury');
         });
     });
     it('returns correct council for postcode', () => {
         postcodeToCouncil('SK3 1WE').then((council) => {
-            expect(council).to.equal('stockport')
+            expect(council).to.equal('stockport');
         });
     });
     it('returns correct council for postcode', () => {
         postcodeToCouncil('WN3 3SP').then((council) => {
-            expect(council).to.equal('wigan')
+            expect(council).to.equal('wigan');
         });
     });
 });

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, AsyncStorage, Image, Vibration, TouchableNativeFeedback } from 'react-native';
 import { Form, InputField } from 'react-native-form-generator';
 import { Restart } from 'react-native-restart';
-// import { postcodeToCouncil } from '../helpers/postcodeToCouncil';
 import axios from 'axios';
 
 export default class Home extends Component {
@@ -14,7 +13,7 @@ export default class Home extends Component {
         council: '',
         postcode: ''
       }
-    }
+    };
     this.postcodeToCouncil = this.postcodeToCouncil.bind(this);
   }
 
@@ -52,7 +51,6 @@ export default class Home extends Component {
           postcode: str.toUpperCase()
           };
         AsyncStorage.setItem('userDetails', JSON.stringify(value));
-        // alert(`Postcode ${str} submitted`);
         Restart();
       })
       .catch(function (err) {
@@ -62,7 +60,7 @@ export default class Home extends Component {
 
   componentDidMount () {
     AsyncStorage.getItem('userDetails', (err, result) => {
-      let val = JSON.parse(result)
+      let val = JSON.parse(result);
       this.setState({
         userDetails: val
       });
@@ -86,7 +84,7 @@ export default class Home extends Component {
           </View>
         </TouchableNativeFeedback>
       </View>
-    )
+    );
     return (
       <View style={styles.container}>
         <Image style={styles.logo} source={require('../images/recycascan.png')}/>
@@ -101,17 +99,15 @@ export default class Home extends Component {
           </View>
         </TouchableNativeFeedback>
       </View>
-    )
+    );
   }
 }
-
-// {this.state.userDetails.council}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#A3D860'
   },
   userDetailsTitle: {
@@ -144,6 +140,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     padding: 10,
-    textAlign: "center"
+    textAlign: 'center'
   }
 });

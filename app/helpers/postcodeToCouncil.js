@@ -4,11 +4,9 @@ function postcodeToCouncil(str) {
 
     if (str.length > 7 || str.length < 5) return 'Invalid postcode';
     let code;
-    // if theres space in the input
     if (str.match(/\s/)) {
         code = str.match(/^\S*/)[0].toUpperCase();
     } else {
-        // if theres no space in the input
         code = str.length > 5 ? str.slice(0, 3).toUpperCase() : str.slice(0, 2).toUpperCase();
     }
 

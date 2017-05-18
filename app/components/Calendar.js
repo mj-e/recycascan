@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View, ScrollView, AsyncStorage, Image } from "react-native";
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, ScrollView, AsyncStorage, Image } from 'react-native';
 import axios from 'axios';
 import moment from 'moment';
 
@@ -43,7 +43,7 @@ export default class Calendar extends Component {
         futureBins.push(collection);
         this.setState({
           collections: futureBins
-        })
+        });
       }
     });
   }
@@ -54,7 +54,7 @@ export default class Calendar extends Component {
         <Image style={styles.logoError} source={require('../images/recycascan.png')}/>
         <Text style={styles.titleError}>Please enter a postcode</Text>
       </View>
-    )
+    );
     return (
       <ScrollView>
         <View style={styles.container}>
@@ -70,11 +70,11 @@ export default class Calendar extends Component {
                     {collection.bins.map((bin, i) => {
                       return (
                         <Image key={i} style={styles.binImage} source={{ uri: bin }}/>
-                      )
+                      );
                     })}
                     </View>
                   </View>
-                )
+                );
               })}
         </View>
       </ScrollView>
@@ -85,13 +85,13 @@ export default class Calendar extends Component {
 const styles = StyleSheet.create({
   containerError: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#ddf4c5'
   },
   date: {
@@ -116,8 +116,8 @@ const styles = StyleSheet.create({
     marginLeft: 8
   },
   imageView: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
     paddingBottom: 30
   },

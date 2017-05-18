@@ -1,14 +1,14 @@
 import '../testUtils/mocha';
 import { ScrollView, Text, View, Image } from 'react-native';
-import Calender from "../../app/components/Calendar";
-import { shallow } from "enzyme";
+import Calender from '../../app/components/Calendar';
+import { shallow } from 'enzyme';
 
 describe('Calender component test', () => {
     let component;
     let initialState = {
       collections: [],
       userDetails: {}
-    }
+    };
 
     beforeEach(function () {
         component = shallow(<Calender />);

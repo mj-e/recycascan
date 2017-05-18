@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View, AsyncStorage, Image } from "react-native";
-import axios from "axios";
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, AsyncStorage, Image } from 'react-native';
+import axios from 'axios';
 import { Restart } from 'react-native-restart';
 
 const ROOT = 'https://world.openfoodfacts.org/api/v0/product/';
@@ -32,11 +32,11 @@ export default class Recycable extends Component {
             this.setState({
               bin: res.data.bins[0].bin,
               loading: false
-            })
+            });
           })
           .catch((err) => {
             alert('This product is not recycable');
-          })
+          });
         this.setState({
           product: res.data.product
         });
@@ -73,8 +73,8 @@ export default class Recycable extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#ddf4c5'
   },
   title: {

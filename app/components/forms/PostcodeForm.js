@@ -6,20 +6,20 @@ import postcodes from './data/postcodes';
 
 export default class PostcodeFormView extends Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       postcode: ''
-    }
+    };
   }
-  handleChange (formData){
+  handleChange (formData) {
     this.setState({
       postcode: formData
-    })
+    });
   }
   onButtonPress () {
     this.setState({
       postcode: ''
-    })
+    });
   }
   render () {
     if (this.state.postcode.length >= 1) return (
@@ -29,7 +29,7 @@ export default class PostcodeFormView extends Component {
           <Button title="Edit" onPress={this.onButtonPress.bind(this)} color="#841584" accessibilityLabel="Submit"/>
         </View>
       </View>
-    )
+    );
     return (
       <View>
         <Text style={styles.title}>Welcome to RecycaScan!</Text>
@@ -39,7 +39,7 @@ export default class PostcodeFormView extends Component {
           </Form>
         </View>
       </View>
-    )
+    );
   }
 }
 
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
     fontSize: 100,
     color: 'red'
   }
-})
+});
