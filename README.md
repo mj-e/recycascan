@@ -43,6 +43,10 @@ npm run mocha
 
 [Download](https://recycascan.herokuapp.com/)
 
+# App architecture
+
+![](./dataFlow.jpg)
+
 # Built With
 
 * [React Native](https://facebook.github.io/react-native/) 
